@@ -1,3 +1,7 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family: "Noto Sans KR", sans-serif !important;
+  }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -121,15 +125,16 @@
     box-sizing: border-box;
     margin-right: 9px;
     padding: 35px 20px 30px;
-    width: 325px;
+    width: 260px;
     height: 500px;
     border: solid #e6e6e6;
     border-width: 0 1px 2px;
-    border-top: 2px solid rgb(155, 89, 182);
+    border-top: 15px solid rgb(155, 89, 182);
     background-color: #fff;
     text-align: center;
     
 }
+
 .info_inner{
     margin-left: 150px;
     margin-bottom: 150px;
@@ -137,17 +142,37 @@
     width: 1000px;
     margin-left: 15%;
 }
+
 .tema_box{
     display: flex;   
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-223%);
+    margin-top: 50px;
+
 }
+
 #tema_btn{
-    width: 100px;
-    height: 35px;
+    width: 60px;
+    height: 26px;
+    font-size: 12px;
     border-radius: 20px;
     margin: 10px;
     border: none;
     background-color: rgba(156, 89, 182, 0.589);
+    color: white;
   
+}
+#tema_btn2{
+    width: 60px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    color: rgb(0, 0, 0); 
 }
 
 #information .table{
@@ -158,7 +183,7 @@
     height: 500px;
     border: solid #e6e6e6;
     border-width: 0 1px 2px;
-    border-top: 2px solid rgb(155, 89, 182);
+    border-top: 15px solid rgb(155, 89, 182);
     background-color: #fff;
     text-align: center;
     margin-left: 20px;
@@ -198,7 +223,7 @@
 	margin: 0px 16px;
 }
 
-.c{
+/* .c{
     padding: 0 19px;
     height: 42px;
     line-height: 42px;
@@ -223,7 +248,7 @@
     border: 2px solid #550adf;
     font-family: 'NotoSans-Bold', '맑은 고딕', 'Malgun Gothic', sans-serif;
     color: #550adf;
-}
+} */
 
 .play_op{
     display: flex;
@@ -411,4 +436,21 @@ footer{
     width: 500px;
     height: 500px;
     background-color: black;
+}
+
+#btn{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display:inline-block;
+    border: none;
+    background-color: rgba(156, 89, 182, 0.589);
+    color: white;
+    align-items: center;
+    
+}
+.play{
+    margin: 0 auto;
+    text-align:center;
 }

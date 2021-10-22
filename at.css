@@ -1,11 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-body {
-  font-family: "Noto Sans KR", sans-serif !important;
-}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+  body{
+    background-color: rgb(224, 224, 224);
+    font-family: "Noto Sans KR", sans-serif !important;
   }
   
   header {
@@ -58,11 +59,9 @@ body {
   .cta:hover {
     background-color: rgba(246, 180, 255, 0.8);
   }
-
-  
   .a_box{
     height: 480px;
-    background: url(https://adventure.lotteworld.com/common/images/icon/attraction_bg1.jpg) no-repeat 50% 0;
+    background: url(https://adventure.lotteworld.com/image/2020/6/202006010125571450_1350.jpg) no-repeat 50% 0;
     background-size:cover;
     position: relative;
    margin: 0 auto;
@@ -89,64 +88,21 @@ body {
 .pb{
   margin-top: 10px;
 }
-
-.card_box{
- width: 1200px;
- margin: auto;
- margin-top: 100px;
- display: flex;
+.at_box{
+margin: 100px;
+display: flex;
 }
-.card_box>.card1{
+.ride, .ride_info{
+  margin: auto;
+  width: 220px;
+  height: 350px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.care{
+  margin: auto;
   width: 500px;
   height: 350px;
-  background-color: rgba(255, 255, 255, 0.849);
-  border: 1px solid #e1e1e1;
-  float: left;
-  margin: 10px;
-}
-a { 
-  text-decoration:none;
-  color: inherit;
-}
-.tag{
-  position: absolute;
-  padding: 0 10px;
-  height: 36px;
-  line-height: 34px;
-  font-size: 15px;
-  color: #fff;
   text-align: center;
-  background: rgba(0,0,0,0.5);
-  border-radius: 2px;
-}
-.con{
-  padding: 27px 25px 30px;
-  font-size: 22px;
-}
-/* .card1:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 0.6);
-  transform: translateY(5px);
-  box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
-} */
-
-/* .card1{
-  color: rgb(12, 11, 11) ;
-  font-weight: bold ;
-  text-align: left ;
-  float: right;
-  margin: 15px 15px 0 0;
-  font-weight: bold;
-  padding: 10px 10px;
-  line-height: 20px;
-  margin: 25px;
-  width: 250px;
-  height: 250px;
-  background-color: rgb(194, 249, 255);
-} */
-
-#btn{
-  width: 150px;
-  height: 100px;
-  background-color: rgb(89, 182, 109);
-  border-radius: 50px;
+  background-color: rgb(255, 255, 255);
 }
