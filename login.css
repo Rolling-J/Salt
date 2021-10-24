@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+/*head 설정*/
+#navbar{
+    background-color: indigo;
+    height: 50px;
+}
+/*배경설정*/
+#reserve_main{
+
+    min-height: 1000px;
+}
+.background{
+    background-image: url(./image/bg_pc_visual.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    justify-content: center;
+}
+/*contents-total*/
+.wrap_body{
+    width: 900px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:50px;
+    padding-bottom: 80px;
+}
+.contents_wrap{
+    background-color: indigo;
+    height: 100%;    
+}
+/*contents-head*/
+.contents_head{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.contents_head > h1{
+    text-align: center;
+    font-size: 40px;
+}
+/*divine*/
+.divine{
+    height: 5px;
+    background-color: lightgray;
+}
+
+/**/
+.content_wrap{
+    background-color: lightgray;
+}
+.content_box{
+    background-color: white;
+    align-items: center;
+    padding: 80px 45px 15px;
+}
+.login_wrap{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+}
+.login_box{
+    justify-content: center;
+}
+.box_head{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.box_head p{
+    font-weight: bold;
+    font-size: 20px;
+}
+#input_box{
+    width: 60%;
+    margin-left: 20%;
+}
+#input_box input{
+    width: 100%;
+    height: 25px;
+    margin: 5px 0;
+}
+/**/
+.btn_box{
+    margin: 30px 0px;
+}
+.btn_box > button{
+    height: 40px;
+    width: 120px;
+    font-size: 15px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.regi_box{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.regi_box a{
+    color: black;
+}
+.regi_box a:visited{
+    color: black;
+}
