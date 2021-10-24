@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reservation.css">
- 
+    <link rel="stylesheet" href="bar.css">
     <title>티켓 예매</title>
 </head>
 <body>
-    <nav id="navbar"></nav>
+    <header>
+        <a class="logo" href="/p_main.html"><img src="./image/salt.png" alt="logo" width="50px"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">즐길거리</a></li>
+                <li><a href="#">요금/우대혜택</a></li>
+                <li><a href="#">이용가이드</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="login.html">로그인</a>     
+    </header>
     <section id="reserve_main">
         <div class="background">
             <div class="wrap_body">
@@ -17,7 +27,7 @@
                     <div class="contents_head">
                         <h1>티켓 예매</h1>
                     </div>
-                    <div class="divine"></div>
+                    <div class="divine_h"></div>
                     <div class="contents_sellect">
                         <div class="sellect_head">
                             <div class="sellct_title">
@@ -128,7 +138,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="divine"></div>
+                    <div class="divine_h"></div>
                     <div class="contents_eventinfo">
                         <div class="event_head">
                             <div class="event_title">
@@ -138,12 +148,12 @@
                         <div class="event_cat">
                             <ul class="cat_sellect">
                                 <li class="cont_on">
-                                    <a href="#tab01" class="tab_box" id="selTab01">
+                                    <a href="#" class="tab_box" id="selTab01">
                                         기간제 혜택
                                     </a>
                                 </li>
                                 <li class="cont_n">
-                                    <a href="#tab02" class="tab_box" id="selTab02">
+                                    <a href="#" class="tab_box" id="selTab02">
                                         제휴카드
                                     </a>
                                 </li>
@@ -158,55 +168,58 @@
                                     <div class="list_under">
                                         <div class="list_des">
                                             <div class="event_img">
-                                                <img src="" alt class="online_event">
+                                                <img src="./image/event01.png" alt class="online_event">
                                             </div>
                                             <div class="event_des">
-                                                [2021.07.01 ~ 2021.12.31] 하반기 이벤트!
+                                                <p>[2021.07.01 ~ 2021.12.31] 하반기 온라인 이벤트!</p>
+                                                <p>하반기동안 진행되는 온라인 예매 이벤트 입니다.</p>
                                             </div>
                                         </div>
                                         <div class="list_sellect">
                                             <div class="sellect_btn">
-                                                <button type="button" class="btn_sellect_event">적용하기</button>
+                                                <button type="button" class="btn_sellect_event" onclick="">적용하기</button>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="cont_list">
                                     <div class="list_title">
-                                        <p>온라인 예매 할인</p>
+                                        <p>야간 파티 테마 할인</p>
                                     </div>
                                     <div class="list_under">
                                         <div class="list_des">
                                             <div class="event_img">
-                                                <img src="" alt class="online_event">
+                                                <img src="./image/event02.jpg" alt class="online_event">
                                             </div>
                                             <div class="event_des">
-                                                [2021.07.01 ~ 2021.12.31] 하반기 이벤트!
+                                                <p>[2021.08.01 ~ 2021.10.30] 야간 파티 테마 할인 이벤트!</p>
+                                                <p>Party tonight! 야간 파티 테마의 할인 이벤트입니다.</p>
                                             </div>
                                         </div>
                                         <div class="list_sellect">
                                             <div class="sellect_btn">
-                                                <button type="button" class="btn_sellect_event">적용하기</button>
+                                                <button type="button" class="btn_sellect_event" onclick="">적용하기</button>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="cont_list">
                                     <div class="list_title">
-                                        <p>온라인 예매 할인</p>
+                                        <p>할로윈 테마 할인</p>
                                     </div>
                                     <div class="list_under">
                                         <div class="list_des">
                                             <div class="event_img">
-                                                <img src="" alt class="online_event">
+                                                <img src="./image/event03.jpg" alt class="online_event">
                                             </div>
                                             <div class="event_des">
-                                                [2021.07.01 ~ 2021.12.31] 하반기 이벤트!
+                                                <p>[2021.10.01 ~ 2021.11.31] 할로윈 이벤트!</p>
+                                                <p>Trick or Treat! 할로윈 축제 이벤트입니다.</p>
                                             </div>
                                         </div>
                                         <div class="list_sellect">
                                             <div class="sellect_btn">
-                                                <button type="button" class="btn_sellect_event">적용하기</button>
+                                                <button type="button" class="btn_sellect_event" onclick="">적용하기</button>
                                             </div>
                                         </div>
                                     </div>
@@ -216,7 +229,10 @@
                         <div id="event_tab02" class="event_cont" style="display: none;"></div>
                     </div>
                     <div class="reserve">
-                        <button type="button">예매하기</button>
+                        <a href="ticket.html">예매하기</a>
+                        <!--
+                        <button type="button" onclick="">예매하기</button>
+                        -->
                     </div>
                 </div>
             </div>

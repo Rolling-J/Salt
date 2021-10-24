@@ -60,21 +60,22 @@
 }
 .cards_play{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 20px
 }
 #play_card{
     width: 30%;
     border: 1px solid rgb(226, 211, 74);
     background-color: white;
-    box-shadow: lightcoral;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 10px 15px;
 }
 #play_card p{
     padding-bottom: 10px;
 }
 #play_card img{
     max-width: 100%;
+    max-height: 100%;
 }
 /*botton*/
 .btn_box{
