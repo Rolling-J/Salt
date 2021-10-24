@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $("#bar").load("bar.html")    
+      });
+</script> 
+<link rel="stylesheet" href="add.css">
+</head>
+<body>
+  <div id="bar"></div>
+
+  <div class="add_title">
+    <div class="ap"></div>
+    <strong class="at">어트랙션 등록</strong>
+  </div>
+
+  <table class="add" border="1px">
+     <tr>
+    	  <td>어트랙션 명</td>
+        <td><input type="text" name="name"></td>
+    </tr>
+     <tr>
+    	<td>테마</td>
+        <td>
+            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">서바이벌</label>
+            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">어드벤쳐</label>
+            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">키디존</label>
+            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">호러</label>
+            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">포토존</label>           
+      </td>
+    </tr>
+    <td>이용시간</td>
+        <td>
+        <select name="time">
+          <option value="1" selected>9시~17시</option>
+          <option value="2" selected>17시~21시</option>
+       </select>
+    </td>
+    </tr>
+    <td>탑승 나이</td>
+    <td>
+    <select name="time">
+      <option value="1" selected>0~4세</option>
+      <option value="2" selected>5~64세</option>
+      <option value="3" selected>65세 이상</option>
+   </select>
+</td>
+    </tr>
+    <td>키</td>
+        <td>
+          <select class="tall_search">
+            <option value="1" selected>100cm~150cm</option>
+            <option value="2" selected>150cm~185cm</option>
+        </select>
+        </td>
+    </tr>
+</table>
+
+<form action="#" method="post" enctype="multipart/form-data">
+  <input type="file" name="imgfile">
+  <input type="submit">
+</form>
+
+
+  
+</body>
+</html>

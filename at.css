@@ -6,35 +6,9 @@
   }
   body{
     background-color: rgb(224, 224, 224);
-    font-family: "Noto Sans KR", sans-serif !important;
   }
   
-  header {
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .logo {
-    margin-right: auto;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-  }
-  
+ 
   .nav__links li {
     padding: 0px 20px;
   }
@@ -92,17 +66,44 @@
 margin: 100px;
 display: flex;
 }
-.ride, .ride_info{
+.r_box{
+  margin: 50px;
+}
+.fas{
+  color: rgba(141, 53, 153, 0.8);
+  font-size: 40px ;
+}
+.rp{
+  margin-top: 25px;
+  font-size: 15px;
+  
+}
+.pe{
+  margin-top: 50px;
+  font-size: 35px;
+}
+.ride{
+  margin-left: 50px;
   margin: auto;
+}
+
+.ride, .ride_info{
   width: 220px;
   height: 350px;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
+.ride_info{
+  margin-right: auto;
+}
 .care{
-  margin: auto;
-  width: 500px;
-  height: 350px;
   text-align: center;
+  margin-right: 15%;
+  width: 500px;
+  height: 343px; 
   background-color: rgb(255, 255, 255);
+}
+.ti{
+  text-align: center;
+  font-size: 25px;
 }
