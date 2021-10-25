@@ -32,7 +32,7 @@
     width: 600px;
     margin: 0 auto;
     padding: 20px 15px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.842);
     border: 2px solid lightblue;
     border-radius: 15px;
 }
@@ -66,15 +66,14 @@
     height: 40px;
     width: 100%;
     font-size: 15px;
-    background-color: rgb(155, 89, 182);
+    background-color: rgb(106, 148, 226);
     border-radius: 5px;
     color: white;
     margin-top: 20px;
     transition: all 0.3s ease 0s;
 }
 .btn_box input:hover {
-    background-color: rgba(246, 180, 255, 0.8);
-    color: black;
+    background-color: rgb(106, 196, 226);
   }
 /*divine*/
 .divine{
