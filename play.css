@@ -1,65 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
   font-family: "Noto Sans KR", sans-serif !important;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  .logo {
-    margin-right: auto;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-weight: 500;
-    color: #000000;
-    text-decoration: none;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: rgb(155, 89, 182);
-  }
-  
-  .cta {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgb(155, 89, 182);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(246, 180, 255, 0.8);
-  }
-
-  
+}  
   .a_box{
     height: 480px;
     background: url(https://adventure.lotteworld.com/common/images/icon/attraction_bg1.jpg) no-repeat 50% 0;
@@ -88,6 +30,32 @@ body {
 }
 .pb{
   margin-top: 10px;
+}
+/* 검색 */
+.search_box{
+  background-color:slateblue;
+  border: none;
+  border-radius: 50px;
+  position: relative;  max-width: 500px; margin: auto; top: -35px;
+}
+.inp{
+  text-align: center;
+}
+.p_search, .age_search, .tall_search{
+  text-align: center;
+  border: none;
+  border-radius: 35px;
+  width: 65px;
+  height: 20px;
+  margin-top: 25px;
+}
+.s_btn{
+  margin: 15px;
+  text-align: center;
+  border: none;
+  border-radius: 35px;
+  width: 65px;
+  height: 20px;
 }
 
 .card_box{
@@ -123,11 +91,11 @@ a {
   padding: 27px 25px 30px;
   font-size: 22px;
 }
-/* .card1:hover{
+.card1:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 0.6);
   transform: translateY(5px);
   box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
-} */
+} 
 
 /* .card1{
   color: rgb(12, 11, 11) ;
@@ -142,11 +110,11 @@ a {
   width: 250px;
   height: 250px;
   background-color: rgb(194, 249, 255);
-} */
+}  */
 
-#btn{
+/* #btn{
   width: 150px;
   height: 100px;
   background-color: rgb(89, 182, 109);
   border-radius: 50px;
-}
+} */

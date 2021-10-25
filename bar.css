@@ -15,6 +15,10 @@ body {
     align-items: center;
     padding: 30px 10%;
     background-color: rgb(255, 255, 255);
+<<<<<<< HEAD
+=======
+    box-shadow: 0 4px 4px -4px black;
+>>>>>>> origin/메뉴바
   }
   
   .logo {

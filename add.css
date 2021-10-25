@@ -1,0 +1,24 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+.add_title{
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.ap{
+    width: 15px;
+    height: 30px;
+    background-color:rgba(141, 53, 153, 0.8);
+}
+.at{
+    margin: auto 0px;
+    margin-left: 3%;
+}
+.add{
+    margin-top: 10%;
+    margin-left: 5%;
+}

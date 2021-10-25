@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="at.css">
+    <script src="https://kit.fontawesome.com/a3555d8f42.js" crossorigin="anonymous"></script> 
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+         $("#bar").load("bar.html")    
+      });
+    </script>
 </head>
 <body>
-    <header>
-        <a class="logo" href="/p_main.html"><img src="images/logo.svg" alt="logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="#">즐길거리</a></li>
-                <li><a href="#">요금/우대혜택</a></li>
-                <li><a href="#">이용가이드</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#">로그인</a>     
-    </header>
+    <div id="bar"></div>
     <div class="a_box">
         <p class="category"> 홈>즐길거리>어트랙션</p>
         <div class="s_title">
@@ -31,21 +28,35 @@
 
     <div class="at_box">
         <div class="ride">
-            <strong>탑승 인원</strong>
-            <p>40명</p>
+            <div class="r_box">
+                <i class="fas fa-user-circle"></i><br>
+                <p class="rp">탑승 인원</p><br>
+                <strong class="pe">40명</strong>
+            </div>
         </div>
         <div class="ride_info">
-            <strong>이용 정보</strong>
-            <p>키 130cm이상~190cm이하<br>65세 이하 탑승 가능</p>
+            <div class="r_box">
+                <i class="fas fa-user-circle"></i><br>
+                <strong>이용 정보</strong>
+                <p>키 130cm이상~190cm이하<br>65세 이하 탑승 가능</p>
+            </div>
         </div>
         <div class="care">
-            <strong>유의사항</strong>
-            <ul class="list">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <div class="r_box">
+                <strong class="ti">이용 정보</strong>
+                <p>키 130cm이상~190cm이하<br>65세 이하 탑승 가능</p>
+            </div>
         </div>
+        <!-- <div class="care">
+            <div class="r_box">
+                <strong class="ti">유의사항</strong>
+                     <ul class="list">
+                        <li>임산부 탑승 금지</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </div>
+        </div> -->
 
 
     </div>
