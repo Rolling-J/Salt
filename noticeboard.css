@@ -47,59 +47,91 @@ body {
 }
 .search_box{
     width: 400px;
+
+    display: flex;
+    line-height: 30px;
     margin-left: auto;
     margin-right: auto;
+ 
 }
 .inp{
+    width: 100%;
     height: 30px;
+    border: 3px solid slateblue;
+    background-color: white;
+    text-align: left;
+    padding: 10px 10px 45px 20px;
 }
 .inp select,input{
-    height: 100%;
-    margin-top:none;
+    height:30px;
 }
 .inp select{
     width: 20%;
+    margin: 0;
 }
-.inp .text{
-    width: 70%;
+.inp input{
+    width: 78%;
+    margin:0;
 }
-.inp .search_btn{
-    width: 10%;
+.search_btn{
+    width: 60px;
     height: 100%;
     border: none;
+    background-color: slateblue;
+    text-decoration: none;
     color:white;
-    margin: none;
-}
-.inp .search_btn img{
-    height: 30px;
+    padding: 15.5px 0;
 }
 /* board table */
 .board_box{
     width: 1200px;
     margin: 100px auto 100px;
+    text-align: right;
 }
+.b_add{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 10px;
+  display:inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  border: 1px solid slateblue;
+  margin-bottom: 15px;
+  transition: all 0.2s ease 0s;
+
+}
+.b_add:hover{
+  color: white;
+  background-color: slateblue;
+}
+
 .board_box table{
     width:100%;
     table-layout: fixed;
+    text-align: center;
+}
+table{
+  border-collapse: collapse;
 }
 .tbl_header{
-    background-color: wheat;
+    background-color: slateblue;
+    color:white
 }
 th{
     padding: 20px 15px;
     font-size: 15px;
     font-weight: 500;
 }
-.tbl_content{
-    border-left: 1px solid wheat;
-    border-right: 1px solid wheat;
-}
 td{
     text-align: center;
     padding: 15px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
-    border-bottom: solid 1px wheat;
+    border-bottom: 1px solid slateblue;
 }
 td a{
     text-decoration: none;
@@ -112,10 +144,7 @@ td a:visited{
     text-decoration: none;
     color:black;
 }
-.card1{
-  background-color:thistle;
-  margin: 10px;
-}
+
 /* paging */
 .paging{
     font: size 16px;
@@ -129,9 +158,9 @@ td a:visited{
     display: inline-block;
     width: 48px;
     height: 48px;
-    font-weight: 300;
+    color: black;
     text-align: center;
-    line-height: 48px;
+    line-height: 46px;
     vertical-align: top;
     border-radius: 50%;
     text-decoration: none;
@@ -139,9 +168,8 @@ td a:visited{
     transition: all 0.2s ease 0s;
 }
 .paging a:hover{
-    border: 1px solid blueviolet;
-    background-color: blueviolet;
-    color:white;
+    border: 1px solid slateblue;
+    background-color: slateblue;
 }
 
 
