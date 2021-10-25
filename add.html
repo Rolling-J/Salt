@@ -16,59 +16,68 @@
 <body>
   <div id="bar"></div>
 
-  <div class="add_title">
-    <div class="ap"></div>
-    <strong class="at">어트랙션 등록</strong>
-  </div>
+<!-- 테스트 -->
+<div class="a_box">
+ 
+  <form id="a_name">
+    <div class="search">
+      <label id="name-label" for="name">어트랙션 명</label>
+      <input type="text" name="name" id="name" class="s_box" placeholder="어트랙션 이름을 입력해주세요." required/>
+    </div>
+ 
+   <div class="search">
+      <p>테마</p> 
+      <label><input name="tag" value="서바이벌" type="radio" class="tema_tags" checked/>서바이벌</label>
+      <label><input name="tag" value="어드벤쳐" type="radio" class="tema_tags"/>어드벤쳐</label>
+      <label><input name="tag" value="키디존" type="radio" class="tema_tags" checked/>키디존</label>
+      <label><input name="tag" value="호러" type="radio" class="tema_tags" checked/>호러</label>
+      <label><input name="tag" value="포토존" type="radio" class="tema_tags" checked/>포토존</label>   
+    </div>
 
-  <table class="add" border="1px">
-     <tr>
-    	  <td>어트랙션 명</td>
-        <td><input type="text" name="name"></td>
-    </tr>
-     <tr>
-    	<td>테마</td>
-        <td>
-            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">서바이벌</label>
-            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">어드벤쳐</label>
-            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">키디존</label>
-            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">호러</label>
-            <label class="tema"><input type="radio" name="temaoptions" id="tema_btn" value="option1">포토존</label>           
-      </td>
-    </tr>
-    <td>이용시간</td>
-        <td>
-        <select name="time">
-          <option value="1" selected>9시~17시</option>
-          <option value="2" selected>17시~21시</option>
-       </select>
-    </td>
-    </tr>
-    <td>탑승 나이</td>
-    <td>
-    <select name="time">
-      <option value="1" selected>0~4세</option>
-      <option value="2" selected>5~64세</option>
-      <option value="3" selected>65세 이상</option>
-   </select>
-</td>
-    </tr>
-    <td>키</td>
-        <td>
-          <select class="tall_search">
-            <option value="1" selected>100cm~150cm</option>
-            <option value="2" selected>150cm~185cm</option>
-        </select>
-        </td>
-    </tr>
-</table>
+    <div class="search">
+      <p>이용시간</p>
+      <select id="dropdown" name="role" class="s_box" required>
+        <option disabled selected value>시간을 선택해주세요.</option>
+        <option value="am">9시~17시</option>
+        <option value="pm">17시~21시</option>
+      </select>
+    </div>
 
-<form action="#" method="post" enctype="multipart/form-data">
-  <input type="file" name="imgfile">
-  <input type="submit">
-</form>
+    
+
+    <div class="search">
+      <p>탑승나이</p>
+      <select id="age" name="age_select" class="s_box" required>
+        <option disabled selected value>나이를 고르세요</option>
+        <option value="0세~4세">0세~4세</option>
+        <option value="5세~64세">5세~64세</option>
+        <option value="65세 이상">65세 이상</option>
+      </select>
+    </div>
+
+    <div class="search">
+      <p>키</p>
+      <select id="tall" name="tall_select" class="s_box" required>
+        <option disabled selected value>키를 고르세요</option>
+        <option value="100cm~150cm">100cm~150cm</option>
+        <option value="150cm~180">150cm~180cm</option>
+      </select>
+    </div>
+
+    
+
+    <div class="search">
+      <input type="file" name="imgfile">
+      <button type="submit" id="submit" class="submit-button">submit</button>
+      <input type="reset" value="다시" class="s_btn">
+    </div>
+    
+  
+  
+  </form>
 
 
+</div>
   
 </body>
 </html>

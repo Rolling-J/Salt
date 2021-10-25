@@ -31,34 +31,7 @@ body {
 .pb{
   margin-top: 10px;
 }
-/* 검색 */
-.search_box{
-  background-color:slateblue;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  position: relative;  max-width: 500px; margin: auto; top: -35px;
-}
-.inp{
-  text-align: center;
-  padding: 10px;
-}
-.p_search, .age_search, .tall_search{
-  text-align: center;
-  border: none;
-  border-radius: 15px;
-  width: 100px;
-  height: 20px;
-  margin-top: 25px;
-}
-.s_btn{
-  margin: 15px;
-  text-align: center;
-  border: none;
-  border-radius: 35px;
-  width: 65px;
-  height: 20px;
-}
+
 
 .card_box{
  width: 1200px;
@@ -100,24 +73,4 @@ a {
   color: white;
 } 
 
-/* .card1{
-  color: rgb(12, 11, 11) ;
-  font-weight: bold ;
-  text-align: left ;
-  float: right;
-  margin: 15px 15px 0 0;
-  font-weight: bold;
-  padding: 10px 10px;
-  line-height: 20px;
-  margin: 25px;
-  width: 250px;
-  height: 250px;
-  background-color: rgb(194, 249, 255);
-}  */
 
-/* #btn{
-  width: 150px;
-  height: 100px;
-  background-color: rgb(89, 182, 109);
-  border-radius: 50px;
-} */

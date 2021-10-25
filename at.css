@@ -8,31 +8,6 @@
     background-color: rgb(224, 224, 224);
   }
   
- 
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: rgb(155, 89, 182);
-  }
-  
-  .cta {
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgb(155, 89, 182);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(246, 180, 255, 0.8);
-  }
   .a_box{
     height: 480px;
     background: url(https://adventure.lotteworld.com/image/2020/6/202006010125571450_1350.jpg) no-repeat 50% 0;
@@ -106,4 +81,14 @@ display: flex;
 .ti{
   text-align: center;
   font-size: 25px;
+}
+.ti_1{
+padding-top: 15px;
+}
+.ti2{
+ margin-top: 15px;
+ text-align: left;
+}
+.ti3{
+  padding-top: 35px;
 }

@@ -9,6 +9,9 @@
     color: rebeccapurple;
     font-size: 25px;
   }
+  a{
+    text-decoration: none;
+  }
   .time{
     display: flex;
     justify-content: center;
@@ -69,6 +72,10 @@
     list-style: none;
     margin-top: 50px;
   }
+  .tema_box ul li a{
+    text-decoration: none;
+    color: white;
+  }
   
   #tema_btn  ,#tema_btn2{
     list-style: none;
@@ -93,7 +100,7 @@
     background-color: rgba(160, 160, 160, 0.589);
     color: white;
   }
- 
+
 /* 게시글 */
 #information .table  {
   padding: 35px 20px 30px;
@@ -105,23 +112,79 @@
   border-top: 15px solid rgb(155, 89, 182);
 }
 /* 예약 */
-#information .check  {
-  padding: 35px 20px 30px;
+#information .check_box  {
   box-sizing: border-box;
   width: 325px;
-  height: 500px;
+  height: 378px;
+  border: solid #e6e6e6;
+  border-width: 0 1px 2px;
   background-color: #fff;
-  margin: 35px 35px;
-  border-top: 155px solid rgb(155, 89, 182);
+  margin: 0px 35px;
+  margin-top: 35px;
 }
+.clock {
+  font-size: 35px;
+}
+ .bus {
+  box-sizing: border-box;
+  width: 325px;
+  height: 112px;
+  border: solid #e6e6e6;
+  border-width: 0 1px 2px;
+  background-color: #fff;
+  margin: 13px 35px;
+  font-size: 55px;
+  text-align: left;
+  padding: 5px 25px;
+  color: rgba(156, 89, 182, 0.589);
+}
+.m_title{
+  height: 129px;
+  color: white;
+  background-color: rgb(127, 63, 153);
+  padding: 55px 20px 30px;
+}
+.checke_text{
+  margin: auto;
+}
+.text_content{
+  padding: 15px;
+}
+.bus_line{
+ padding: 0px 35px;
+}
+.train-line {
+  width: 40px;
+  height: 1px;
+  background-color: lightgrey;
+  margin: 42px 0px;
+  float: left;
+}
+.train-stop {
+  width: 25px;
+  height: 25px;
+  border-radius: 70%;
+  margin: 30px 0px;
+  float: left;
+}
+.green{
+  background-color: #009944;
+  opacity: 0.7;
+}
+.gray{
+  background-color: #a8a8a8;
+  opacity: 0.7;
+}
+
+/* 구분선 */
+
 .hr-play {
 	display: flex;
 	flex-basis: 100%;
 	align-items: center;
 	color: rgb(0, 0, 0);
 	font-size: 25px;
-	margin: 50px;
-    
+	margin: 50px;   
 }
 .hr-play::before,
 .hr-play::after {
@@ -137,17 +200,20 @@
 /* 더 많은 어트랙션 */
 
 .play{
-  background-image: url(image/배경이미지.png);
   background: url(https://adventure.lotteworld.com/common/images/icon/mainCon3_bg.jpg);
   padding: 15px; 
 }
-
+.play ul li a{
+  text-decoration: none;
+  color: white;
+}
 .tag{
   display: flex;
   list-style: none;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: 55px;
 }
+
 #play_btn{
   width: 100px;
   height: 35px;
@@ -158,6 +224,7 @@
   color: white;
 }
 
+
 /* 카드박스 */
 
 .card_box{
@@ -166,6 +233,7 @@
   display: flex;
 }
 .card{
+  border: none;
   box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
   transition: 0.4s;
   width: 50000px;
@@ -176,98 +244,47 @@
   margin: 10px;
 }
 .card:hover{
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+  background-color: rgb(101, 39, 160);
+  color: white;
 }
 .box{
   height: 100px;
   padding: 2px 16px;
 }
-
+.box b{
+  font-size: 25px;
+  float: left;
+  margin: 15px 5px;
+}
 /* 더 많은 어트랙션 보기 버튼 */
 
+#play_btn2 a{
+  text-decoration: none;
+  color: white;
+}
+
 #play_btn2{
-  margin-top: 50px;
-  justify-content: center;
   width: 200px;
   height: 56px;
+  text-decoration:none;
+  margin: 50px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
-  margin: 0px 20px;
   font-size: 18px;
   color: #fff;
   border: none;
   text-align: center;
   border-radius: 28px;
   background-color: rgba(156, 89, 182, 0.589);
-  margin: 100px 800px;
+ 
 }
  
 /* 하단 영역 */
 
-footer{
-	background-color: #24262b;
-    padding: 70px 0;
-}
-.footer_box{
-	max-width: 1170px;
-	margin:auto;
-}
-.footer_content{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-
-.company{
-   width: 25%;
-   padding: 0 15px;
-}
-.company h4{
-	font-size: 18px;
-	color: #ffffff;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.company h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #ff7e28;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-
-.company ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
- 
-  
-}.company ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.company .sns a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
 
 
 
