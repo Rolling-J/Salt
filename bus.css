@@ -37,58 +37,22 @@
 .pb{
   margin-top: 10px;
 }
-.at_box{
-margin: 100px;
-display: flex;
+/* 버스 */
+.bus{
+    justify-content: center;
+   
+    width: 730px;
+    height: 1000px;
+    background-color: white;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.r_box{
-  margin: 50px;
+.bus_box{
+    display: flex;
+      
 }
-.fas{
-  color: rgba(141, 53, 153, 0.8);
-  font-size: 40px ;
-}
-.rp{
-  margin-top: 25px;
-  font-size: 15px;
-  
-}
-.pe{
-  margin-top: 50px;
-  font-size: 35px;
-}
-.ride{
-  margin-left: 50px;
-  margin: auto;
-}
-
-.ride, .ride_info{
-  width: 220px;
-  height: 350px;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-}
-.ride_info{
-  margin-right: auto;
-}
-.care{
-  text-align: center;
-  margin-right: 15%;
-  width: 500px;
-  height: 343px; 
-  background-color: rgb(255, 255, 255);
-}
-.ti{
-  text-align: center;
-  font-size: 25px;
-}
-.ti_1{
-padding-top: 15px;
-}
-.ti2{
- margin-top: 15px;
- text-align: left;
-}
-.ti3{
-  padding-top: 35px;
+.map{
+    padding: auto;
 }
