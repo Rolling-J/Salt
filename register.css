@@ -47,6 +47,10 @@
     border-radius: 15px;
     padding: 15px 30px;
 }
+.container input, .container select{
+    border: none;
+    margin-top: 3px;
+}
 .id_pw_box{
     height: 60%;
     width: 40%;
@@ -97,6 +101,7 @@
     width: 100%;
     font-size: 15px;
     background-color: rgb(106, 148, 226);
+    border: none;
     border-radius: 5px;
     color: white;
     margin-top: 20px;
