@@ -146,34 +146,36 @@
     justify-content: space-between;
     text-align: center;
 }
-.cont_on , .cont_n{
-    width: 50%;
-    padding: 10px 0 10px;
-}
-.cont_on{
+.cont_block{
     height: 100%;
-    width: 100%;
+    width: 50%;
+    
+    color:lightgray;
+}
+.cont_block.selected{
     background-color: #2b72c9;
 }
-.tab_box{
+
+
+.cat_sellect li a{
+    display: block;
+    text-decoration: none;
     color: white;
+    padding: 10px 0 10px;
 }
 .tab_box:visited{
     color: white;
 }
-.cont_n{
-    height: 100%;
-    width: 100%;
-    color:lightgray;
-}
-.cat_sellect li a{
-    display: block;
-    text-decoration: none;
-}
-/*3-2 tap01 - event list*/
+/* 탭 전체 */
+
 .event_cont{
     background-color: white;
+    display:none;
 }
+.event_cont.selected{ 
+    display:block;
+}
+/*3-2 tap - event list*/
 .event_list{
     padding: 30px 60px 0;
 }
