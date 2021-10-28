@@ -1,22 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $("#bar").load("bar.html")    
-      });
-    </script> 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $("#footer").load("footer.html")    
-      });
-    </script> 
     <script src="https://kit.fontawesome.com/a3555d8f42.js" crossorigin="anonymous"></script>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
      rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
@@ -34,10 +25,11 @@
       }
       setInterval(clock, 1000);
     </script>
+    <link rel="stylesheet" href="./resources/css/main.css" />
      
 </head>
 <body>
-    <div id="bar"></div>
+   <jsp:include page="bar.jsp"/>
     <!-- 슬라이드 이미지 -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -88,7 +80,7 @@
             <div class="tema_box">
             <ul class="tema">
               <!-- <li class="tema_list">서바이벌</li> -->
-              <li><button id="tema_btn"><a href="play.html">서바이벌</a></button> </li>
+              <li><button id="tema_btn"><a href="play.jsp">서바이벌</a></button> </li>
               <li><button id="tema_btn2"><a href="#">어드벤쳐</a></button> </li>
               <li><button id="tema_btn"><a href="#">키디존</a></button> </li>
             </ul>

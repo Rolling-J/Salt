@@ -1,30 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://kit.fontawesome.com/a3555d8f42.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $("#bar").load("bar.html")    
-      });
-</script> 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-     $("#footer").load("footer.html")    
-  });
-</script> 
-<link rel="stylesheet" href="add.css">
+  <link rel="stylesheet" href="./resources/css/add.css" />
 </head>
 <body>
-  <div id="bar"></div>
-
+  
 <!-- 테스트 -->
+<jsp:include page="bar.jsp"/>
 <div class="a_box">
+	<form name ="newattraction" action="processaddattraction.jsp" 
+	class="form-horizontal" method="psot" enctype="multipart/form-data"></form>
   <h1>어트랙션 등록</h1>
   <form id="a_name">
     <div class="search">

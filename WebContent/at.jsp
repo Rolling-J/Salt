@@ -1,5 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@ page import="dto.attraction"%>
+<%@ page import="dao.attractionbox"%>
+<jsp:useBean id="attractionDAO" class="dao.attractionbox" scope="session" />
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,27 +12,20 @@
     <link rel="stylesheet" href="at.css">
     <script src="https://kit.fontawesome.com/a3555d8f42.js" crossorigin="anonymous"></script> 
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $("#bar").load("bar.html")    
-      });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-         $("#footer").load("footer.html")    
-      });
-    </script> 
+    <link rel="stylesheet" href="./resources/css/at.css" />
 </head>
 <body>
-    <div id="bar"></div>
+<%
+		String name = request.getParameter("name");
+		attractionbox dao = attractionbox.getInstance();
+		attraction attraction = dao.getattractionByname(name);
+	%>
+    <jsp:include page="bar.jsp"/>
     <div class="a_box">
         <p class="category"> 홈>즐길거리>어트랙션</p>
         <div class="s_title">
-            <strong class="a"> 허리케인</strong>
-            <p class="pb">구름이 맞닿을 듯한 높이까지 올라갔다<br>
-                한 순간에 떨어지는 스릴만점 어트랙션입니다.</p>
+            <strong class="a"><%=attraction.getName()%></strong>
+            <p class="pb"><%=attraction.getInfo()%></p>
         </div>
     </div>
     
@@ -37,14 +35,14 @@
             <div class="r_box">
                 <i class="fas fa-user-circle"></i><br>
                 <p class="rp">탑승 인원</p><br>
-                <strong class="pe">40명</strong>
+                <strong class="pe"><%=attraction.getRide()%></strong>
             </div>
         </div>
         <div class="ride_info">
             <div class="r_box">
                 <i class="fas fa-user-circle"></i><br>
                 <strong>이용 정보</strong>
-                <p>키 130cm이상~190cm이하<br>65세 이하 탑승 가능</p>
+                <p><%=attraction.getTall()%><br><%=attraction.getAge()%></p>
             </div>
         </div>
         <div class="care">
